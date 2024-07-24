@@ -1,33 +1,32 @@
 # ARP Spoofing Detection and Mitigation in SDN Environments
 
 ## Overview
-This project establishes a comprehensive framework for detecting and mitigating ARP spoofing attacks within Software-Defined Networking (SDN) environments. By integrating Mininet for network emulation and Ettercap for ARP manipulation, the framework provides a proactive defense strategy to safeguard against ARP spoofing.
+This project presents a robust framework for detecting and mitigating ARP spoofing attacks within Software-Defined Networking (SDN) environments. By leveraging Mininet for network emulation and Ettercap for ARP manipulation, we ensure a proactive defense strategy against ARP spoofing attacks.
 
 ## Project Description
-The project involves setting up a Mininet-based virtual network environment that includes multiple hosts, a switch, and a Ryu controller. This simulated network enables the testing and evaluation of ARP spoofing detection and mitigation mechanisms. The setup allows for monitoring ARP traffic, identifying malicious activities, and applying real-time countermeasures to maintain network security.
+The project involves the creation of a Mininet-based virtual network topology that includes multiple hosts, a switch, and a Ryu controller. This setup allows for the simulation and analysis of network behavior to detect and mitigate ARP spoofing attacks.
 
 ### Key Features
-- **Network Emulation with Mininet:** Constructed a virtual network topology with four hosts, one switch, and a Ryu controller to simulate realistic network scenarios.
-- **ARP Manipulation with Ettercap:** Employed Ettercap to simulate ARP spoofing attacks, enabling the testing of detection and mitigation strategies.
-- **Real-time Monitoring with Ryu Controller:** Developed and deployed Ryu controller applications to analyze ARP packets, detect discrepancies, and block malicious ARP responses in real time.
+- **Network Emulation with Mininet:** Created a virtual network topology consisting of four hosts, one switch, and one Ryu controller.
+- **ARP Manipulation with Ettercap:** Simulated ARP spoofing attacks to test the robustness of the detection and mitigation framework.
+- **Ryu Controller Integration:** Developed applications to monitor ARP traffic, detect spoofing attacks, and block malicious packets in real-time.
 
-## Tools Used
-- **Mininet:** Provides network emulation capabilities to create and test virtual network topologies.
-- **Ryu Controller:** An SDN framework used for managing network flows and implementing custom network policies.
-- **Ettercap:** A network security tool utilized for generating ARP spoofing attacks and analyzing their impact.
-- **Python:** Used for scripting and implementing Ryu controller applications to handle network traffic and security tasks.
+## Technologies Used
+- **Mininet:** Network emulation tool for creating virtual network topologies.
+- **Ryu Controller:** An SDN framework for managing and controlling network flows.
+- **Ettercap:** A network security tool used for ARP manipulation.
+- **Python:** The programming language used for scripting the Ryu controller applications.
 
 ## Implementation Details
-1. **Mininet Topology Setup:** Designed and configured a network topology with four hosts, a single switch, and a Ryu controller to emulate a real-world network environment.
-2. **Event Handling in Ryu:** Leveraged the event-driven architecture of the Ryu controller to process OpenFlow messages, handle ARP packets, and execute detection algorithms.
-3. **ARP Packet Analysis:** Extracted and analyzed ARP protocol data from Ethernet frames to detect anomalies and potential spoofing attempts.
-4. **Detection and Mitigation:** Maintained an IP-to-MAC address mapping table, detected inconsistencies indicative of ARP spoofing, and implemented mitigation measures by dropping malicious ARP packets.
+1. **Mininet Topology Setup:** Configured a network topology with multiple hosts, a switch, and a Ryu controller.
+   ![Topology Setup](images/topology_setup.png)
+2. **Event Handling:** Utilized the Ryu controller's event-driven architecture to handle OpenFlow messages and monitor ARP traffic.
+3. **ARP Packet Analysis:** Parsed Ethernet frames to extract ARP protocol data and identify ARP replies.
+4. **Spoofing Detection and Mitigation:** Maintained IP-to-MAC address mappings and detected discrepancies to identify spoofing attacks. Suspicious ARP packets were dropped to prevent incorrect mappings.
+   ![Spoofing Detection](images/spoofing_detection.png)
+   ![Mitigation Process](images/mitigation_process.png)
 
 ## Achievements
-- Successfully implemented a real-time ARP spoofing detection and mitigation framework.
-- Enhanced network security by ensuring accurate IP-to-MAC address mappings and preventing unauthorized access.
-- Demonstrated effective defensive strategies against ARP spoofing attacks in a controlled, virtualized network environment, showcasing the viability of the solution for practical applications.
-
-## Future Directions
-- **AI Integration:** Exploring the integration of artificial intelligence and machine learning techniques to further improve detection accuracy and adapt to evolving spoofing methods.
-- **Scalability Testing:** Conducting scalability tests to evaluate the framework’s performance in larger, more complex SDN deployments.
+- Successfully implemented real-time ARP spoofing detection and mitigation.
+- Ensured network security by maintaining accurate IP-MAC address mappings.
+- Demonstrated effective defense strategies against ARP spoofing attacks in a controlled virtual environment.
