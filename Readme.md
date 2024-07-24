@@ -11,7 +11,7 @@ The project involves setting up a Mininet-based virtual network environment that
 - **ARP Manipulation with Ettercap:** Employed Ettercap to simulate ARP spoofing attacks, enabling the testing of detection and mitigation strategies.
 - **Real-time Monitoring with Ryu Controller:** Developed and deployed Ryu controller applications to analyze ARP packets, detect discrepancies, and block malicious ARP responses in real time.
 
-## Technologies Used
+## Tools Used
 - **Mininet:** Provides network emulation capabilities to create and test virtual network topologies.
 - **Ryu Controller:** An SDN framework used for managing network flows and implementing custom network policies.
 - **Ettercap:** A network security tool utilized for generating ARP spoofing attacks and analyzing their impact.
