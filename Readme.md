@@ -31,5 +31,3 @@ The project involves setting up a Mininet-based virtual network environment that
 ## Future Directions
 - **AI Integration:** Exploring the integration of artificial intelligence and machine learning techniques to further improve detection accuracy and adapt to evolving spoofing methods.
 - **Scalability Testing:** Conducting scalability tests to evaluate the framework’s performance in larger, more complex SDN deployments.
-
-Feel free to explore the code and provide feedback or contribute to further enhancements!
