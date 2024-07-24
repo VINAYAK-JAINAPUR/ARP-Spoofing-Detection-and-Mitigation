@@ -23,6 +23,7 @@ The project involves the creation of a Mininet-based virtual network topology th
    ![Mininet Topology Setup](https://github.com/VINAYAK-JAINAPUR/ARP-Spoofing-Detection-and-Mitigation/blob/main/images/ryu.jpeg)
 2. **Event Handling:** Utilized the Ryu controller's event-driven architecture to handle OpenFlow messages and monitor ARP traffic.
 3. **Flowchart:** The following flowchart outlines the process of detecting and mitigating ARP spoofing attacks within the SDN environment:
+
 ![Flowchart](https://github.com/VINAYAK-JAINAPUR/ARP-Spoofing-Detection-and-Mitigation/blob/main/images/flowchart_cnet.jpeg)
 4. **ARP Packet Analysis:** Parsed Ethernet frames to extract ARP protocol data and identify ARP replies.
 5. **Spoofing Detection:** Maintained IP-to-MAC address mappings and detected discrepancies to identify spoofing attacks.
