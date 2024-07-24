@@ -25,6 +25,7 @@ The project involves the creation of a Mininet-based virtual network topology th
 3. **Flowchart:** The following flowchart outlines the process of detecting and mitigating ARP spoofing attacks within the SDN environment:
 
 ![Flowchart](https://github.com/VINAYAK-JAINAPUR/ARP-Spoofing-Detection-and-Mitigation/blob/main/images/flowchart_cnet.jpeg)
+
 4. **ARP Packet Analysis:** Parsed Ethernet frames to extract ARP protocol data and identify ARP replies.
 5. **Spoofing Detection:** Maintained IP-to-MAC address mappings and detected discrepancies to identify spoofing attacks.
 ![Spoofing Detection](https://github.com/VINAYAK-JAINAPUR/ARP-Spoofing-Detection-and-Mitigation/blob/main/images/detection.jpeg)
