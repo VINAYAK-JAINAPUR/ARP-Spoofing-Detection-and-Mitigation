@@ -11,20 +11,23 @@ The project involves the creation of a Mininet-based virtual network topology th
 - **ARP Manipulation with Ettercap:** Simulated ARP spoofing attacks to test the robustness of the detection and mitigation framework.
 - **Ryu Controller Integration:** Developed applications to monitor ARP traffic, detect spoofing attacks, and block malicious packets in real-time.
 
-## Technologies Used
+## Tools Used
 - **Mininet:** Network emulation tool for creating virtual network topologies.
+   ![Topology Setup](https://github.com/VINAYAK-JAINAPUR/ARP-Spoofing-Detection-and-Mitigation/blob/main/images/setup.jpeg)
 - **Ryu Controller:** An SDN framework for managing and controlling network flows.
 - **Ettercap:** A network security tool used for ARP manipulation.
 - **Python:** The programming language used for scripting the Ryu controller applications.
 
 ## Implementation Details
 1. **Mininet Topology Setup:** Configured a network topology with multiple hosts, a switch, and a Ryu controller.
-   ![Topology Setup](images/topology_setup.png)
+   ![Mininet Topology Setup](https://github.com/VINAYAK-JAINAPUR/ARP-Spoofing-Detection-and-Mitigation/blob/main/images/ryu.jpeg)
 2. **Event Handling:** Utilized the Ryu controller's event-driven architecture to handle OpenFlow messages and monitor ARP traffic.
-3. **ARP Packet Analysis:** Parsed Ethernet frames to extract ARP protocol data and identify ARP replies.
-4. **Spoofing Detection and Mitigation:** Maintained IP-to-MAC address mappings and detected discrepancies to identify spoofing attacks. Suspicious ARP packets were dropped to prevent incorrect mappings.
-   ![Spoofing Detection](images/spoofing_detection.png)
-   ![Mitigation Process](images/mitigation_process.png)
+3. **Flowchart:** The following flowchart outlines the process of detecting and mitigating ARP spoofing attacks within the SDN environment:
+![Flowchart](https://github.com/VINAYAK-JAINAPUR/ARP-Spoofing-Detection-and-Mitigation/blob/main/images/flowchart_cnet.jpeg)
+4. **ARP Packet Analysis:** Parsed Ethernet frames to extract ARP protocol data and identify ARP replies.
+5. **Spoofing Detection and Mitigation:** Maintained IP-to-MAC address mappings and detected discrepancies to identify spoofing attacks. Suspicious ARP packets were dropped to prevent incorrect mappings.
+   ![Spoofing Detection](https://github.com/VINAYAK-JAINAPUR/ARP-Spoofing-Detection-and-Mitigation/blob/main/images/detection.jpeg)
+   ![Mitigation Process](https://github.com/VINAYAK-JAINAPUR/ARP-Spoofing-Detection-and-Mitigation/blob/main/images/mitigation.jpeg)
 
 ## Achievements
 - Successfully implemented real-time ARP spoofing detection and mitigation.
